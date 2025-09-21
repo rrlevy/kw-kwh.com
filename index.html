@@ -49,6 +49,26 @@
       color: gray;
     }
 
+    /* Language switcher bar */
+    .lang-switcher {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 0.9em;
+    }
+
+    .lang-switcher a {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .lang-switcher img {
+      width: 20px;
+      height: 20px;
+    }
+
     @media (min-width: 720px) {
       body {
         margin: 5em auto 10em;
@@ -60,6 +80,11 @@
 
       h2 {
         font-size: 3em;
+      }
+
+      .lang-switcher {
+        top: 20px;
+        right: 20px;
       }
     }
   </style>
@@ -75,6 +100,13 @@
 </script>
 
 <body>
+  <div class="lang-switcher">
+    <a href="https://www.energyunits.fyi/" title="Mudar para o inglês">
+      <img src="/english-lang.svg" alt="Ícone da língua inglesa">
+      <span>EN</span>
+    </a>
+  </div>
+
   <h1>Unidades de energia: <br />kW ou kWh?</h1>
 
   <h2>Quilowatt-hora (kWh)</h2>
