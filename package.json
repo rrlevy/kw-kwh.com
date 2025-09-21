@@ -1,0 +1,12 @@
+{
+  "name": "kw-kwh.com",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "deploy": "aws s3 sync . s3://kw-kwh.com/ --delete --exclude '.git/*' --exclude '.gitignore' --profile pessoal"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
